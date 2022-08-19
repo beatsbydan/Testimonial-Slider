@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+:root {
+  --DarkBlue:hsl(240, 38%, 20%);
+  --GrayishBlue:hsl(240, 18%, 77%);
+}
+
+html, body{
+  font-family: 'Inter';
+}
+body{
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+h3, p {
+  color: var(--DarkBlue);
+}
+
+.desc {
+  color: var(--GrayishBlue);
+}
+
+/*Carousel start*/
+.carousel{
+  width: 100%;
+  margin: auto;
+  padding: 0 8%;
+}
+.carousel__container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel__track{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  transition: all 250ms ease-in;
+}
+.carousel__slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.block{
+  width: inherit;
+}
+.top{
+  width: inherit;
+}
+.avatar{
+  background-image: url(./images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.main__carousel{
+  width: inherit;
+}
+.tanya, .john{
+  width: 80%;
+  max-width:320px ;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 25px;
+  box-shadow: 0px 40px 30px  rgba(0, 0, 0, 0.062);
+}
+.carousel__buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 1;
+  top: 5px;
+  position: relative;
+  background-color: white;
+  width: 40%;
+  height: 40px;
+  max-width: 80px;
+  border-radius:50px;
+  padding: 12px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062);
+}
+.carousel__buttons button{
+  background-color: transparent;
+  display: flex;
+  border: none;
+  width: inherit;
+  cursor: pointer;
+  position: relative;
+}
+.prev, .next{
+  display: flex;
+  align-self: center;
+  position: absolute;
+}
+.prev{
+  left:0;
+}
+.next{
+  right:0;
+}
+.texts{
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size:65px ;
+  background-position: top;
+  margin-top: 52px;
+}
+.texts p{
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  padding:30px 2% 0 2% ;
+}
+.contact{
+  margin-top: 30px;
+  text-align: center;
+}
+.contact h3{
+  font-size: 1.1rem;
+  color: var(--DarkBlue);
+}
+.contact p{
+  font-size: 1.05rem;
+  padding-top: 0;
+}
+@media screen and (min-width:700px) {
+  .top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .tanya, .john{
+    max-width: unset;
+  }
+  .texts{
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    left: 6%;
+    background-size: 125px;
+    background-position: top left 25%;
+  }
+  .texts p{
+    padding-top: 70px;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.2em;
+    
+  }
+  .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    justify-content: flex-start;
+  }
+  .contact p{
+    padding-top: unset;
+    font-size: 1.05rem;
+  }
+  .carousel__buttons{
+    left: -20%;
+  }
+}

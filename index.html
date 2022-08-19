@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="carousel">
+      <div class="carousel__container">
+        <ul class="carousel__track" id="carousel__track">
+          <li class="carousel__slide current-slide">
+            <div class="block">
+              <div class="top">
+                <div class="avatar">
+                  <div class="main__carousel">
+                    <img class="tanya" src="./images/image-tanya.jpg" alt="">
+                    <div class="carousel__buttons">
+                      <button title ="Previous" type="button" class="carousel__button--left" id="carousel__button--left"><img class="prev" src="./images/icon-prev.svg" alt=""></button>
+                      <button title ="Next" type="button" class="carousel__button--right" id="carousel__button--right"><img class="next" src="./images/icon-next.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="texts">
+                  <p>“I’ve been interested in coding for a while but never taken the jump, until now. 
+                    I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+                    excited about the future.”</p>
+                    <div class="contact">
+                      <h3>Tanya Sinclair</h6>
+                      <p class="desc">UX Engineer</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="block">
+              <div class="top">
+                <div class="avatar">
+                  <div class="main__carousel">
+                    <img class="john" src="./images/image-john.jpg" alt="">
+                    <div class="carousel__buttons">
+                      <button title="Previous" type="button" class="carousel__button--left" id="carousel__button--left-1"><img class="prev" src="./images/icon-prev.svg" alt=""></button>
+                      <button title ="Next" type="button" class="carousel__button--right" id="carousel__button--right-1"><img class="next" src="./images/icon-next.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="texts">
+                  <p>“If you want to lay the best foundation possible I’d recommend taking this course. 
+                    The depth the instructors go into is incredible. I now feel so confident about 
+                    starting up as a professional developer.”</p>
+                    <div class="contact">
+                      <h3>John Tarkpor</h3>
+                      <p class="desc">Junior Front-end Developer</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./carousel.js"></script>
+</html>
