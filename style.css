@@ -7,15 +7,20 @@
 html, body{
   font-family: 'Inter';
 }
-body{
-  overflow-x: hidden;
+main{
+  width: 100%;
+  height:100%;
+  margin: auto;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 ul li {
   list-style: none;
 }
@@ -31,20 +36,25 @@ h3, p {
 /*Carousel start*/
 .carousel{
   width: 100%;
-  margin: auto;
+  height: 100%;
+  position: relative;
   padding: 0 8%;
 }
 .carousel__container{
   width: 100%;
+  bottom: 0;
   height: 100%;
+  margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .carousel__track{
   width: 100%;
   height: 100%;
   margin: 0;
-  position: relative;
   padding: 0;
+  bottom: 0;
+  position: relative;
   transition: all 250ms ease-in;
 }
 .carousel__slide{
@@ -152,6 +162,7 @@ h3, p {
     position: relative;
     z-index: 1;
     width: 50%;
+    max-width: 500px;
     left: 6%;
     background-size: 125px;
     background-position: top left 25%;
@@ -159,7 +170,7 @@ h3, p {
   .texts p{
     padding-top: 70px;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.2em;
     
   }
