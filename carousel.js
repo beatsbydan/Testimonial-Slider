@@ -10,11 +10,10 @@ const prevButton1 = document.getElementById("carousel__button--left-1");
 //
 //getting the slide width
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(slideWidth)
 //
 //Function to set slide position
 const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * 2 * index + 'px';
+    slide.style.left = slideWidth * index + 'px';
 }
 //looping over the slides Array to set the position
 slides.forEach(setSlidePosition);
