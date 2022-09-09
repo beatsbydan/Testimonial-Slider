@@ -26,6 +26,7 @@ const moveToExactSlide = (tracks, currentSlides, targetSlides) => {
 }
 //nextButton
 nextButton.addEventListener('click', e => {
+    e.preventDefault()
     var currentSlide = track.querySelector(".current-slide");
     var nextSlide = currentSlide.nextElementSibling;
     
