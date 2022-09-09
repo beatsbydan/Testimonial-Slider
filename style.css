@@ -27,12 +27,8 @@ h3, p {
 /*Carousel start*/
 .carousel{
   width: 80%;
-  height: 600px;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  height: 650px;
+  margin: 120px auto;
 }
 .carousel__container{
   width: 100%;
